@@ -1,2 +1,16 @@
 # third-party-tools
-Database for third party tools for a range of games. Including tools to help with multiple games e.g. Aim Training for shooters
+Database of third-party tools for a range of games
+
+
+## Planned Features MVP
+
+- Genre Tools; E.G Aim Trainers for FPS, dps Calculators for RPGs ETC...
+- Game Tools; List of tools developed by third parties (Not the devlopers of the game) With links to use and Attribution
+- Accounts; Ability to create accounts, save frequent tools.
+
+### Planned Features Long-Term
+
+- Newsletters; To stay up-to-date with whatever tools and games that are followed.
+- General tools e.g. Maps, quest trackers,
+- Subscription Model for ^ In-house devloped tools
+- Guides/Tutorials/Interviews for devloping your own third party tools
