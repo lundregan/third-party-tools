@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   const tools = await loadToolsCollection();
-  
+
   res.send(await tools.findOne(mongodb.ObjectID(req.params.id)))
 })
 
@@ -53,10 +53,13 @@ router.put('/:id', async (req, res) => {
 
 
 async function loadToolsCollection() {
-
   const user = process.env.MONGODB_USER
   const pass = process.env.MONGODB_PASS
-  const client = await mongodb.MongoClient.connect(`mongodb+srv://${user}:${pass}@cluster0.zevxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {useNewUrlParser: true});
+  
+  const client = await mongodb.MongoClient.connect(
+    `mongodb+srv://${user}:${pass}@cluster0.zevxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+    {useNewUrlParser: true, useUnifiedTopology:true}
+  )
 
   return client.db('gtd').collection('tools');
 }
