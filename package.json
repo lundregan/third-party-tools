@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
+    "serve": "cd client && npm run serve",
     "dev": "nodemon server/index.js"
   },
   "repository": {
