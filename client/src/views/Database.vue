@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <p>Tools</p>
-    <div v-for="tool in tools" :key="tool.id">
-      <p>{{tool.name}}</p>
+  <div class="database">
+    <h1>The Database</h1>
+    <h2>The Complete Database of Third-Party Tools</h2>
+
+    <div>
+      <div v-for="tool in tools" :key="tool.id">
+        <p>{{tool.name}}</p>
+        <p>{{tool.description}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -11,12 +16,9 @@
 import ToolService from '../toolService'
 
 export default {
-  name: 'HelloWorld',
   data() {
     return {
-      tools: [],
-      err: '',
-      text: ''
+      tools: []
     }
   },
   async created() {
@@ -29,8 +31,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
