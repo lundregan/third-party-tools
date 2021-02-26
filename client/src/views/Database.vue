@@ -1,6 +1,6 @@
 <template>
   <div class="database">
-    <h1>The Database</h1>
+    <h1 class="text-blue-600 font-bold">The Database</h1>
     <h2>The Complete Database of Third-Party Tools</h2>
 
     <div>
