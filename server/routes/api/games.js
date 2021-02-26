@@ -22,9 +22,7 @@ router.post('/', async (req, res) => {
 
   await tools.insertOne({
     name: req.body.name,
-    description: req.body.description,
-    game: req.body.game,
-    catagory: req.body.catagory,
+    genre: req.body.genre,
     addedAt: new Date()
   });
 
