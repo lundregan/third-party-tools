@@ -1,11 +1,14 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <div id="app" class="bg-gray-900 min-h-screen">
+    <p class="font-semibold text-red-600">ETG</p>
+    <p class="text-xs text-gray-400">External Gaming Tools</p>
+
+    <div id="nav" class="text-gray-400">
       <router-link to="/">Home</router-link> |
       <router-link to="/database">Database</router-link> |
       <router-link to="/create">Create</router-link>
     </div>
-    <router-view/>
+    <router-view class="text-white" />
   </div>
 </template>
 
@@ -15,7 +18,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
@@ -24,10 +26,9 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  @apply text-red-600
 }
 </style>

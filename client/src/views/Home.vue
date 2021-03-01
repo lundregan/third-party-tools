@@ -1,9 +1,9 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-
-    <h1>Third Party Tools</h1>
-    <h2>Keeping you up-to-date with the latest and greatest gaming tools</h2>
+  <div class="home flex justify-center">
+    <div>
+      <h1>Find the Perfect Tool</h1>
+      <h2>Stay Up-To-Date and find the perfect tool for your favourite game!</h2>
+    </div>
   </div>
 </template>
 
