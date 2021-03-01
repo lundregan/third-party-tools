@@ -6,7 +6,8 @@
     <div id="nav" class="text-gray-400">
       <router-link to="/">Home</router-link> |
       <router-link to="/database">Database</router-link> |
-      <router-link to="/create">Create</router-link>
+      <router-link to="/create">Create</router-link> |
+      <router-link to="/games">Games</router-link>
     </div>
     <router-view class="text-white" />
   </div>
