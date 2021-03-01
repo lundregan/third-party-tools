@@ -11,7 +11,7 @@ class ToolService {
             resolve(
                 data.map(tool => ({
                     ...tool,
-                    createdAt: new Date(post.createdAt)
+                    createdAt: new Date(tool.createdAt)
                 }))
             );
         })
