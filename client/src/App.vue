@@ -7,7 +7,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/database">Database</router-link> |
       <router-link to="/create">Create</router-link> |
-      <router-link to="/games">Games</router-link>
+      <router-link to="/games">Games</router-link> |
+      <router-link to="/games/add">Add Game</router-link>
     </div>
     <router-view class="text-white" />
   </div>

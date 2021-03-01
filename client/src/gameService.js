@@ -13,15 +13,10 @@ class GameService {
     })
   }
 
-  static 
-
-  // CREATE a tool
-
-  // static createTool(toolInfo) {
-  //   console.log('static create tool')
-    
-  //   return axios.post(url, toolInfo)
-  // }
+  // CREATE game
+  static createGame(gameInfo) {
+    return axios.post(url, gameInfo)
+  }
 
   // DELETE a tool
 
