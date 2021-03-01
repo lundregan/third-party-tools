@@ -27,7 +27,7 @@ export default {
       tools: []
     }
   },
-  async created() {
+  async mounted() {
     try {
       this.tools = await ToolService.getTools()
       console.log('created')

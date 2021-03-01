@@ -24,10 +24,10 @@ class ToolService {
 
   // Create
 
-  static createTool(text) {
-    return axios.post(url, {
-      text
-    })
+  static createTool(toolInfo) {
+    console.log('static create tool')
+    
+    return axios.post(url, toolInfo)
   }
 
   // Delete
