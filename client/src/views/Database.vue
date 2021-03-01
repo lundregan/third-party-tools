@@ -30,9 +30,8 @@ export default {
   async mounted() {
     try {
       this.tools = await ToolService.getTools()
-      console.log('created')
     } catch(err) {
-      this.err = err
+      console.error(err)
     }
   }
 }
