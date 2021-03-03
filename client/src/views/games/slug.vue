@@ -4,6 +4,10 @@
       <p>{{game.name}}</p>
       <p>{{game.genre}}</p>
     </div>
+    
+    <router-link :to="`/games/edit/${game._id}`" class="bg-blue-600 text-white p-2 m-16">
+      Edit
+    </router-link>
   </div>
 </template>
 

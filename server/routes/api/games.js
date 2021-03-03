@@ -38,6 +38,7 @@ router.delete('/:id', async (req, res) => {
   res.sendStatus(200)
 })
 
+// Update?
 router.put('/:id', async (req, res) => {
   const tools = await loadGamesCollection()
 

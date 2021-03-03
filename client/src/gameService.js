@@ -37,6 +37,10 @@ class GameService {
   // }
 
   // UPDATE a tool
+
+  static editGame(gameInfo) {
+    return axios.put(`${url}${gameInfo.id}`, gameInfo.data)
+  }
 }
 
 export default GameService;
