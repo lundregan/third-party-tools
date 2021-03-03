@@ -23,7 +23,11 @@ import GameService from '../../gameService'
 export default {
   data () {
     return {
-      game: null,
+      game: {
+        name: '',
+        genre: '',
+        _id: null
+      },
       editName: '',
       editGenre: ''
     }

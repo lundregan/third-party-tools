@@ -17,7 +17,7 @@ import GameService from '../../gameService'
 export default {
   data () {
     return {
-      game: null
+      game: {}
     }
   },
   async created() {
