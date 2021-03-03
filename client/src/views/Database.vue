@@ -9,10 +9,12 @@
         <p>Description</p>
         <p>Game</p>
       </div>
-      <div v-for="tool in tools" :key="tool.id" class="flex justify-between shadow m-2">
-        <p>{{tool.name}}</p>
-        <p>{{tool.description}}</p>
-        <p>{{tool.game}}</p>
+      <div v-for="tool in tools" :key="tool.id">
+        <router-link :to="`tools/${tool._id}`" class="flex justify-between shadow m-2">
+          <p>{{tool.name}}</p>
+          <p>{{tool.description}}</p>
+          <p>{{tool.game}}</p>
+        </router-link>
       </div>
     </div>
   </div>

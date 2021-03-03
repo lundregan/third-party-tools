@@ -20,7 +20,21 @@ class ToolService {
         })
         
     });
-}
+  }
+
+  static getTool(slug) {
+    return new Promise((resolve, reject) => {
+      axios.get(`${url}${slug}`)
+      .then(res => {
+        const data = res.data;
+
+        resolve(data)
+      })
+      .catch(err => {
+        reject(err)
+      })
+    })
+  }
 
   // CREATE a tool
 
