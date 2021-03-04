@@ -12,6 +12,10 @@
         <label for="" class="mr-4">Genre</label>
         <input type="text" v-model="game.genre" class="text-black w-64 self-center my-2">
       </div>
+      <div>
+        <label for="" class="mr-4">Image URL</label>
+        <input type="text" v-model="game.imageURL" class="text-black w-64 self-center my-2">
+      </div>
       <button class="bg-blue-600 text-white p-2 m-4 w-64 self-center" @click="updateGame">Save Changes</button>
     </div>
   </div>
@@ -45,7 +49,8 @@ export default {
         id: this.game._id,
         data: {
           name: this.game.name,
-          genre: this.game.genre
+          genre: this.game.genre,
+          imageURL: this.game.imageURL
         }
       })
     }

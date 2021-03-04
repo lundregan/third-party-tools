@@ -3,9 +3,10 @@
     <div>
       <h1>-- Supported Games --</h1>
       <div class="flex flex-wrap">
-        <div v-for="game in games" :key="game.id" class="shadow p-2 mx-8 my-2">
+        <div v-for="game in games" :key="game.id" class="p-2 mx-8 my-2">
           <router-link :to="`games/${game._id}`">
             <p>{{game.name}}</p>
+            <img :src="game.imageURL" alt="" class="rounded-full w-64 h-64">
           </router-link>
         </div>
       </div>
