@@ -1,6 +1,8 @@
 <template>
   <div>
-    <p>{{tool.name}}</p>    
+    <p>{{tool.name}}</p>
+
+    <router-link :to="`/tools/edit/${tool._id}`" class="bg-blue-600 p-2 mt-16">Edit Tool</router-link>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ import ToolService from '../../toolService'
 export default {
   data () {
     return {
-      tool: null
+      tool: {}
     }
   },
   async created() {

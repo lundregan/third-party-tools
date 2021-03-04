@@ -49,6 +49,11 @@ const routes = [
     path: '/tools/:slug',
     name: 'Tool',
     component: () => import('../views/tools/slug.vue')
+  },
+  {
+    path: '/tools/edit/:slug',
+    name: 'EditTool',
+    component: () => import('../views/tools/edit.vue')
   }
 ]
 

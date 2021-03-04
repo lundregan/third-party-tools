@@ -51,6 +51,9 @@ class ToolService {
   }
 
   // UPDATE a tool
+  static updateTool(toolInfo) {
+    return axios.put(`${url}${toolInfo.id}`, toolInfo.data)
+  }
 }
 
 export default ToolService;
